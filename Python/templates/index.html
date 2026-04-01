@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+</head>
+<body>
+    <h2> profile info </h2>
+    {% if istopper %}
+    <p>{{name}} is topper</p>
+    {% else %}
+    <p> {{name}} is not topper</p>
+    {% endif %}
+    
+    <ul>{% for student in students %}
+    <li>{{student}}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
